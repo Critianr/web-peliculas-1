@@ -11,15 +11,11 @@ export const Busqueda = () => {
     setQuery(e.target.value);
 
     fetch(
-      `https://api.themoviedb.org/3/search/movie?api_key=c978912fb46ea0658038ca141f934d90&language=en-US&page=1&include_adult=false&query=${e.target.value}`
-        // method: 'GET', // *GET, POST, PUT, DELETE, etc.
-        // mode: 'cors', // no-cors, *cors, same-origin
-        // // cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
-        // credentials: 'same-origin', // include, *same-origin, omit
-        // headers: {
-        //   'Content-Type': 'application/json'
-        //   // 'Content-Type': 'application/x-www-form-urlencoded',
-        // },
+      `https://api.themoviedb.org/3/search/movie?api_key=c978912fb46ea0658038ca141f934d90&language=en-US&page=1&include_adult=false&query=${e.target.value}`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
 
     )
       .then((res) => res.json())
