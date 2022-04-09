@@ -19,7 +19,7 @@ function App() {
           <Route exact path="/Vistas">
             <ListaVista />
           </Route> 
-          <Route path="/">
+          <Route exact path="/">
             <Busqueda />
           </Route>
 
