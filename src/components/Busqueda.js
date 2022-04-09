@@ -16,8 +16,7 @@ export const Busqueda = () => {
         headers: {
           'Content-Type': 'application/json',
         },
-
-    )
+      })
       .then((res) => res.json())
       .then((data) => {
         if (!data.errors) {
