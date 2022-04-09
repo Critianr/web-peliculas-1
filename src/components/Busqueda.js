@@ -12,7 +12,7 @@ export const Busqueda = () => {
 
     fetch(
       `https://api.themoviedb.org/3/search/movie?api_key=c978912fb46ea0658038ca141f934d90&language=en-US&page=1&include_adult=false&query=${e.target.value}`, {
-        method: 'POST', // *GET, POST, PUT, DELETE, etc.
+        method: 'GET', // *GET, POST, PUT, DELETE, etc.
         mode: 'cors', // no-cors, *cors, same-origin
         cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
         credentials: 'same-origin', // include, *same-origin, omit
