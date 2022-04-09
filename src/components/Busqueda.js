@@ -16,6 +16,8 @@ export const Busqueda = () => {
         headers: {
           'Content-Type': 'application/json',
         },
+        mode: 'no-cors',
+        body: JSON.stringify(data),
       })
       .then((res) => res.json())
       .then((data) => {
