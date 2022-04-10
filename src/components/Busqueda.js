@@ -11,7 +11,10 @@ export const Busqueda = () => {
 
     setQuery(e.target.value);
 
-    axios.get(`https://api.themoviedb.org/3/search/movie?api_key=c978912fb46ea0658038ca141f934d90&language=en-US&page=1&include_adult=false&query=${e.target.value}`)
+    axios.get(`https://api.themoviedb.org/3/search/movie?api_key=c978912fb46ea0658038ca141f934d90&language=en-US&page=1&include_adult=false&query=${e.target.value}`,{
+    header:{'Accept': 'application/json'}
+    }
+   )
     .then(res => {
       const data = res.data;
       setResults(data.results)
