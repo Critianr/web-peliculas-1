@@ -48,16 +48,16 @@ export const ResultCard = ({ movie }) => {
             disabled={watchlistDisabled}
             onClick={() => addMovieToWatchlist(movie)}
           >
-            Add to Watchlist
+            peliculas Vistas
           </button>
 
-          <button
+          {/* <button
             className="btn"
             disabled={watchedDisabled}
             onClick={() => addMovieToWatched(movie)}
           >
             Add to Watched
-          </button>
+          </button> */}
         </div>
       </div>
     </div>
