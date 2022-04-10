@@ -38,7 +38,7 @@ export const ResultCard = ({ movie }) => {
         <div className="header">
           <h3 className="title">{movie.title}</h3>
           <h4 className="release-date">
-            <Moment format="DD/MM/YYYY">{movie.release_date}</Moment>
+            <Moment format="YYYY">{movie.release_date}</Moment>
           </h4>
         </div>
 
@@ -48,16 +48,16 @@ export const ResultCard = ({ movie }) => {
             disabled={watchlistDisabled}
             onClick={() => addMovieToWatchlist(movie)}
           >
-            Marcar como vistas
+            Add to Watchlist
           </button>
 
-          {/* <button
+          <button
             className="btn"
             disabled={watchedDisabled}
             onClick={() => addMovieToWatched(movie)}
           >
-          megusta , no me gusta :( 
-          </button> */}
+            Add to Watched
+          </button>
         </div>
       </div>
     </div>
