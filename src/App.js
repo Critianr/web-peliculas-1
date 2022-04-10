@@ -5,7 +5,7 @@ import { ListaVista } from "./components/ListaVista";
 // import { Watched } from "./components/Watched";
 import { Busqueda } from "./components/Busqueda";
 import "./App.css";
-import "./lib/font-awesome/css/all.min.css";
+// import "./lib/font-awesome/css/all.min.css";
 
 import { GlobalProvider } from "./context/GlobalState";
 
@@ -16,10 +16,10 @@ function App() {
         <Header />
 
         <Switch>
-          <Route exact path="/Vistas" component={ListaVista}>
+          <Route exact path="/Vistas" element={<ListaVista />}>
             {/* <ListaVista /> */}
           </Route> 
-          <Route exact path="/" component={Busqueda}>
+          <Route exact path="/" element={<Busqueda />}>
             {/* <Busqueda /> */}
           </Route>
 
