@@ -16,10 +16,11 @@ function App() {
         <Header />
 
         <Switch>
-          <Route exact path="/Vistas" element={<ListaVista />}>
+        <Route exact path="/" element={<Busqueda />}>
+          
             {/* <ListaVista /> */}
           </Route> 
-          <Route exact path="/" element={<Busqueda />}>
+          <Route exact path="/Vistas" element={<ListaVista />}>
             {/* <Busqueda /> */}
           </Route>
 
