@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import Moment from "react-moment";
-import { GlobContext } from "../context/GlobalState";
+import { GlobContext } from "../context/statesGlobales";
 
 export const ResultCard = ({ movie }) => {
   const {

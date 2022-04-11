@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { GlobContext } from "../context/GlobalState";
+import { GlobContext } from "../context/statesGlobales";
 import { MovieCard } from "./MovieCard";
 
 export const ListaVista = () => {
