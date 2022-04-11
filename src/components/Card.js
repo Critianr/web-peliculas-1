@@ -43,7 +43,10 @@ export const Card = ({ pelicula }) => {
           >
             peliculas Vistas
           </button>
-
+          <i>👏</i>
+          <i>👍</i>
+          <i>👎</i>
+          <i>😊</i>
 
         </div>
       </div>
