@@ -3,19 +3,19 @@ export default (state, action) => {
     case "ADD_MOVIE_TO_WATCHLIST":
       return {
         ...state,
-        watchlist: [action.payload, ...state.watchlist],
+        listPeliculas: [action.payload, ...state.listPeliculas],
       };
     case "REMOVE_MOVIE_FROM_WATCHLIST":
       return {
         ...state,
-        watchlist: state.watchlist.filter(
+        listPeliculas: state.listPeliculas.filter(
           (movie) => movie.id !== action.payload
         ),
       };
     case "ADD_MOVIE_TO_WATCHED":
       return {
         ...state,
-        watchlist: state.watchlist.filter(
+        listPeliculas: state.listPeliculas.filter(
           (movie) => movie.id !== action.payload.id
         ),
         watched: [action.payload, ...state.watched],
@@ -26,7 +26,7 @@ export default (state, action) => {
         watched: state.watched.filter(
           (movie) => movie.id !== action.payload.id
         ),
-        watchlist: [action.payload, ...state.watchlist],
+        listPeliculas: [action.payload, ...state.listPeliculas],
       };
     case "REMOVE_FROM_WATCHED":
       return {

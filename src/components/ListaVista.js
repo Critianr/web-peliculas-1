@@ -3,7 +3,7 @@ import { GlobalContext } from "../context/GlobalState";
 import { MovieCard } from "./MovieCard";
 
 export const ListaVista = () => {
-  const { watchlist  } = useContext(GlobalContext);
+  const { listPeliculas  } = useContext(GlobalContext);
 
   return (
     <div className="movie-page">
@@ -12,13 +12,13 @@ export const ListaVista = () => {
           <h1 className="heading">Pelicula Vista</h1>
 
           <span className="count-pill">
-            {watchlist.length} {watchlist.length === 1 ? "Movie" : "Movies"}
+            {listPeliculas.length} {listPeliculas.length === 1 ? "Movie" : "Movies"}
           </span>
         </div>
 
-        {watchlist.length > 0 ? (
+        {listPeliculas.length > 0 ? (
           <div className="movie-grid">
-            {watchlist.map((movie) => (
+            {listPeliculas.map((movie) => (
               <MovieCard movie={movie} key={movie.id} type="watchlist" />
             ))}
           </div>
