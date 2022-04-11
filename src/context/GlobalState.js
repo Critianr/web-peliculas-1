@@ -19,7 +19,7 @@ export const GlobalProvider = (props) => {
   const [state, dispatch] = useReducer(AppReducer, initialState);
 
   useEffect(() => {
-    localStorage.setItem("watchlist", JSON.stringify(state.listPeliculas));
+    localStorage.setItem("listaPelicula", JSON.stringify(state.listPeliculas));
   }, [state]);
 
   // accion
@@ -27,9 +27,7 @@ export const GlobalProvider = (props) => {
     dispatch({ type: "ADD_LIST_PELICULA", payload: movie });
   };
 
-  const removeMovieFromWatchlist = (id) => {
-    dispatch({ type: "REMOVE_MOVIE_FROM_WATCHLIST", payload: id });
-  };
+
   const eliminarPelicula = (id) => {
     dispatch({ type: "ELIMINAR_PELICULA", payload: id });
   };

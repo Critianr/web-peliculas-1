@@ -11,7 +11,7 @@ export const MovieControls = ({ type, movie }) => {
 
   return (
     <div className="inner-card-controls">
-      {type === "watchlist" && (
+      {type === "listaPelicula" && (
         <>
           <button className="ctrl-btn" onClick={() => addListPelicula(movie)}>
             <i className="fa-fw far fa-eye"></i>
@@ -26,20 +26,6 @@ export const MovieControls = ({ type, movie }) => {
         </>
       )}
 
-      {/* {type === "watched" && (
-        <>
-          <button className="ctrl-btn" onClick={() => moveToWatchlist(movie)}>
-            <i className="fa-fw far fa-eye-slash"></i>
-          </button>
-
-          <button
-            className="ctrl-btn"
-            onClick={() => removeFromWatched(movie.id)}
-          >
-            <i className="fa-fw fa fa-times"></i>
-          </button>
-        </>
-      )} */}
     </div>
   );
 };
