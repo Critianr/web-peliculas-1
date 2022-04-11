@@ -34,7 +34,7 @@ export const ResultCard = ({ movie }) => {
           <h4 className="release-date">
             <Moment format="YYYY-MM-DD">{movie.release_date}</Moment>
           </h4>
-          <h5>{movie.runtime} </h5>
+          {/* <h5>{movie.runtime} </h5> */}
         </div>
 
         <div className="controls">
