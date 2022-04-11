@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { ResultCard } from "./ResultCard";
+import { ResultCard } from "./Card";
 import axios from 'axios';
 
 export const Busqueda = () => {
@@ -57,7 +57,7 @@ export const Busqueda = () => {
             <div className="results">
               {results.map((movie) => (
                 <div key={movie.id}>
-                  <ResultCard movie={movie} />
+                  <Card movie={movie} />
                 </div>
               ))}
             </div>
