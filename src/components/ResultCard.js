@@ -4,7 +4,7 @@ import { GlobalContext } from "../context/GlobalState";
 
 export const ResultCard = ({ movie }) => {
   const {
-    addMovieToWatchlist,
+    addListPelicula,
     listPeliculas,
   } = useContext(GlobalContext);
 
@@ -41,7 +41,7 @@ export const ResultCard = ({ movie }) => {
           <button
             className="btn"
             disabled={watchlistDisabled}
-            onClick={() => addMovieToWatchlist(movie)}
+            onClick={() => addListPelicula(movie)}
           >
             peliculas Vistas
           </button>
