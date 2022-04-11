@@ -7,7 +7,7 @@ import { Busqueda } from "./components/Busqueda";
 import "./App.css";
 // import "./lib/font-awesome/css/all.min.css";
 
-import { GlobalProvider } from "./context/GlobalState";
+import { GlobalProvider } from "./context/statesGlobales";
 
 function App() {
   return (
