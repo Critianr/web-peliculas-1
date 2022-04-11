@@ -5,21 +5,21 @@ import { GlobalContext } from "../context/GlobalState";
 export const ResultCard = ({ movie }) => {
   const {
     addMovieToWatchlist,
-    addMovieToWatched,
+    // addMovieToWatched,
     watchlist,
-    watched,
+    // watched,
   } = useContext(GlobalContext);
 
   let storedMovie = watchlist.find((o) => o.id === movie.id);
-  let storedMovieWatched = watched.find((o) => o.id === movie.id);
+  // let storedMovieWatched = watched.find((o) => o.id === movie.id);
 
   const watchlistDisabled = storedMovie
     ? true
-    : storedMovieWatched
-    ? true
+    // : storedMovieWatched
+    // ? true
     : false;
 
-  const watchedDisabled = storedMovieWatched ? true : false;
+  // const watchedDisabled = storedMovieWatched ? true : false;
 
   return (
     <div className="result-card">
@@ -38,8 +38,9 @@ export const ResultCard = ({ movie }) => {
         <div className="header">
           <h3 className="title">{movie.title}</h3>
           <h4 className="release-date">
-            <Moment format="YYYY">{movie.release_date}</Moment>
+            <Moment format="YYYY-MM-DD">{movie.release_date}</Moment>
           </h4>
+          <h5>{movie.runtime} </h5>
         </div>
 
         <div className="controls">

@@ -139,8 +139,9 @@ header .nav-links li:last-child {
 }
 
 .results {
-  /* display: flex; */
-  
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 100%;
   padding: 0;
   margin: 0;
   margin-top: 20px;
