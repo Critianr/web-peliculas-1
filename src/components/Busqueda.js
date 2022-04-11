@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { ResultCard } from "./Card";
+import { Card } from "./Card";
 import axios from 'axios';
 
 export const Busqueda = () => {
