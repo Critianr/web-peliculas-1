@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { GlobContext } from "../context/statesGlobales";
 
-export const BtnControls = ({ type, movie }) => {
+export const MoveControls = ({ type, movie }) => {
   const {
     eliminarPelicula,
     addListPelicula,

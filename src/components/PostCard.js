@@ -1,5 +1,5 @@
 import React from "react";
-import { BtnControls } from "./BtnControls";
+import { MoveControls } from "./BtnControls";
 
 export const PostCard = ({ movie, type }) => {
   return (
@@ -11,7 +11,7 @@ export const PostCard = ({ movie, type }) => {
         alt={`${movie.title} Poster`}
       />
 
-      <BtnControls type={type} movie={movie} />
+      <MoveControls type={type} movie={movie} />
     </div>
   );
 };
