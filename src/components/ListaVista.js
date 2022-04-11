@@ -18,8 +18,8 @@ export const ListaVista = () => {
 
         {listPeliculas.length > 0 ? (
           <div className="movie-grid">
-            {listPeliculas.map((movie) => (
-              <PostCard movie={movie} key={movie.id} type="listaPelicula" />
+            {listPeliculas.map((pelicula) => (
+              <PostCard pelicula={pelicula} key={pelicula.id} type="listaPelicula" />
             ))}
           </div>
         ) : (

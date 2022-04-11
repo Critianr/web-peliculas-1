@@ -10,9 +10,7 @@ export const Card = ({ pelicula }) => {
 
   let storedMovie = listPeliculas.find((o) => o.id === pelicula.id);
 
-  const watchlistDisabled = storedMovie
-    ? true
-    : false;
+  const watchlistDisabled = storedMovie ? true : false;
 
 
   return (
