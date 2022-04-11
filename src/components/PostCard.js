@@ -1,5 +1,5 @@
 import React from "react";
-import { MoveControls } from "./BtnControls";
+import { MoveControls } from "./MoveControls";
 
 export const PostCard = ({ movie, type }) => {
   return (
