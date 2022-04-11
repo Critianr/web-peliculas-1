@@ -1,6 +1,7 @@
 export default (state, action) => {
   switch (action.type) {
-    case "ADD_MOVIE_TO_WATCHLIST":
+    // case "ADD_MOVIE_TO_WATCHLIST":
+      case "ADD_LIST_PELICULA":
       return {
         ...state,
         listPeliculas: [action.payload, ...state.listPeliculas],
