@@ -55,9 +55,9 @@ export const Busqueda = () => {
         </div>
         {results.length > 0 && (
             <div className="results">
-              {results.map((movie) => (
-                <div key={movie.id}>
-                  <Card movie={movie} />
+              {results.map((pelicula) => (
+                <div key={pelicula.id}>
+                  <Card pelicula={pelicula} />
                 </div>
               ))}
             </div>
