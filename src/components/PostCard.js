@@ -1,7 +1,7 @@
 import React from "react";
-import { MovieControls } from "./btnControls";
+import { BtnControls } from "./BtnControls";
 
-export const MovieCard = ({ movie, type }) => {
+export const PostCard = ({ movie, type }) => {
   return (
     <div className="movie-card">
       <div className="overlay"></div>
@@ -11,7 +11,7 @@ export const MovieCard = ({ movie, type }) => {
         alt={`${movie.title} Poster`}
       />
 
-      <MovieControls type={type} movie={movie} />
+      <BtnControls type={type} movie={movie} />
     </div>
   );
 };

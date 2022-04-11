@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { GlobContext } from "../context/statesGlobales";
-import { MovieCard } from "./MovieCard";
+import { PostCard } from "./PostCard";
 
 export const ListaVista = () => {
   const { listPeliculas  } = useContext(GlobContext);
@@ -19,7 +19,7 @@ export const ListaVista = () => {
         {listPeliculas.length > 0 ? (
           <div className="movie-grid">
             {listPeliculas.map((movie) => (
-              <MovieCard movie={movie} key={movie.id} type="listaPelicula" />
+              <PostCard movie={movie} key={movie.id} type="listaPelicula" />
             ))}
           </div>
         ) : (
