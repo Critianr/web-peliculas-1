@@ -6,9 +6,9 @@ const initialState = {
   watchlist: localStorage.getItem("watchlist")
     ? JSON.parse(localStorage.getItem("watchlist"))
     : [],
-  watched: localStorage.getItem("watched")
-    ? JSON.parse(localStorage.getItem("watched"))
-    : [],
+  // watched: localStorage.getItem("watched")
+  //   ? JSON.parse(localStorage.getItem("watched"))
+  //   : [],
 };
 
 // hook context
