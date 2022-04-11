@@ -6,9 +6,6 @@ const initialState = {
   listPeliculas: localStorage.getItem("listPeliculas")
     ? JSON.parse(localStorage.getItem("listPeliculas"))
     : [],
-  // watched: localStorage.getItem("watched")
-  //   ? JSON.parse(localStorage.getItem("watched"))
-  //   : [],
 };
 
 // hook context
@@ -22,7 +19,7 @@ export const GlobalProvider = (props) => {
     localStorage.setItem("listaPelicula", JSON.stringify(state.listPeliculas));
   }, [state]);
 
-  // accion
+  // acciones
   const addListPelicula = (movie) => {
     dispatch({ type: "ADD_LIST_PELICULA", payload: movie });
   };
@@ -33,9 +30,9 @@ export const GlobalProvider = (props) => {
   };
 
 
-  const moveToWatchlist = (movie) => {
-    dispatch({ type: "MOVE_TO_WATCHLIST", payload: movie });
-  };
+  // const moveToWatchlist = (movie) => {
+  //   dispatch({ type: "MOVE_TO_WATCHLIST", payload: movie });
+  // };
 
 
 
@@ -45,7 +42,7 @@ export const GlobalProvider = (props) => {
         listPeliculas: state.listPeliculas,
         addListPelicula,
         eliminarPelicula,
-        moveToWatchlist,
+        // moveToWatchlist,
       }}
     >
       {props.children}
