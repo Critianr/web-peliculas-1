@@ -2,7 +2,6 @@ import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { Header } from "./components/Header";
 import { ListaVista } from "./components/ListaVista";
-// import { Watched } from "./components/Watched";
 import { Busqueda } from "./components/Busqueda";
 import "./App.css";
 // import "./lib/font-awesome/css/all.min.css";
