@@ -13,27 +13,11 @@ export default (state, action) => {
           (movie) => movie.id !== action.payload
         ),
       };
-    // case "ADD_MOVIE_TO_WATCHED":
+    // case "REMOVE_FROM_WATCHED":
     //   return {
     //     ...state,
-    //     listPeliculas: state.listPeliculas.filter(
-    //       (movie) => movie.id !== action.payload.id
-    //     ),
-    //     watched: [action.payload, ...state.watched],
+    //     watched: state.watched.filter((movie) => movie.id !== action.payload),
     //   };
-    // case "MOVE_TO_WATCHLIST":
-    //   return {
-    //     ...state,
-    //     watched: state.watched.filter(
-    //       (movie) => movie.id !== action.payload.id
-    //     ),
-    //     listPeliculas: [action.payload, ...state.listPeliculas],
-    //   };
-    case "REMOVE_FROM_WATCHED":
-      return {
-        ...state,
-        watched: state.watched.filter((movie) => movie.id !== action.payload),
-      };
     default:
       return state;
   }
