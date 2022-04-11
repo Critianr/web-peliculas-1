@@ -1,12 +1,12 @@
 import React, { useContext } from "react";
 import Moment from "react-moment";
-import { GlobalContext } from "../context/GlobalState";
+import { GlobContext } from "../context/GlobalState";
 
 export const ResultCard = ({ movie }) => {
   const {
     addListPelicula,
     listPeliculas,
-  } = useContext(GlobalContext);
+  } = useContext(GlobContext);
 
   let storedMovie = listPeliculas.find((o) => o.id === movie.id);
 

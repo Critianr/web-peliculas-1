@@ -1,9 +1,9 @@
 import React, { useContext } from "react";
-import { GlobalContext } from "../context/GlobalState";
+import { GlobContext } from "../context/GlobalState";
 import { MovieCard } from "./MovieCard";
 
 export const ListaVista = () => {
-  const { listPeliculas  } = useContext(GlobalContext);
+  const { listPeliculas  } = useContext(GlobContext);
 
   return (
     <div className="movie-page">

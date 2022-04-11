@@ -9,7 +9,7 @@ const initialState = {
 };
 
 // hook context
-export const GlobalContext = createContext(initialState);
+export const GlobContext = createContext(initialState);
 
 // provider 
 export const GlobalProvider = (props) => {
@@ -30,14 +30,8 @@ export const GlobalProvider = (props) => {
   };
 
 
-  // const moveToWatchlist = (movie) => {
-  //   dispatch({ type: "MOVE_TO_WATCHLIST", payload: movie });
-  // };
-
-
-
   return (
-    <GlobalContext.Provider
+    <GlobContext.Provider
       value={{
         listPeliculas: state.listPeliculas,
         addListPelicula,
@@ -46,6 +40,6 @@ export const GlobalProvider = (props) => {
       }}
     >
       {props.children}
-    </GlobalContext.Provider>
+    </GlobContext.Provider>
   );
 };
