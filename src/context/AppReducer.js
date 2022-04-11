@@ -6,7 +6,7 @@ export default (state, action) => {
         ...state,
         listPeliculas: [action.payload, ...state.listPeliculas],
       };
-    case "REMOVE_MOVIE_FROM_WATCHLIST":
+    case "ELIMINAR_PELICULA":
       return {
         ...state,
         listPeliculas: state.listPeliculas.filter(
