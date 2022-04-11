@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { GlobalContext } from "../context/GlobalState";
+import { GlobContext } from "../context/GlobalState";
 
 export const MovieControls = ({ type, movie }) => {
   const {
@@ -7,7 +7,7 @@ export const MovieControls = ({ type, movie }) => {
     addListPelicula,
     // moveToWatchlist,
     // removeFromWatched,
-  } = useContext(GlobalContext);
+  } = useContext(GlobContext);
 
   return (
     <div className="inner-card-controls">
